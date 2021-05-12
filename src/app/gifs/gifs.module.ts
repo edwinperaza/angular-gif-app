@@ -4,8 +4,6 @@ import { GifsPageComponent } from './gifs-page/gifs-page.component';
 import { SearchComponent } from './search/search.component';
 import { ResultsComponent } from './results/results.component';
 
-
-
 @NgModule({
   declarations: [
     GifsPageComponent,
