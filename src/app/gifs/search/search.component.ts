@@ -14,7 +14,11 @@ export class SearchComponent {
   constructor(private gifsService: GifsService) { }
   
   search() {
-    this.gifsService.searchGifs(this.txtSearch.nativeElement.value);
+    const valor = this.txtSearch.nativeElement.value;
+    if (valor.trim().length === 0) {
+      return;
+    }
+    this.gifsService.searchGifs(valor);
     this.txtSearch.nativeElement.value = '';
   }
 
